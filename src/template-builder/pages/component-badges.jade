@@ -1,0 +1,24 @@
+//- =========================================================================
+	File Name: component-badges.jade
+	Description: Small and adaptive tag for adding context to just about any content..
+	--------------------------------------------------------------------------
+	Item Name: Stack - Responsive Admin Template
+	Version: 2.1
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+	==========================================================================
+
+block pageVars
+	- var pageTitle   = "Badge"
+	- var pageSubTitle = "Badge for adding context about any content"
+	- var description = "Badges are used to provide additional information about something."
+	- var activeMenu  = "component-badges"
+
+extends template
+
+append breadcrumbs
+	+breadcrumbs([{url:"index.html",name:"Home"},{url:"#",name:"Components"}, {name:"Badge"}])
+
+//- Include page content in page block
+append content
+	include ../contents/component-badges.html
